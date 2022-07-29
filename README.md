@@ -14,7 +14,7 @@ SECRET_KEY="SECRET_KEY"
 Using isAuthenticate in Express endpoint
 ``` sh
 # Express Routes
-app.get("/product", isAuthenticated, (_req, res) => {
+app.get("/product", isAuthenticated, (req, res) => {
   return res.json({ status: 1, message: "Welcome to Product Service" });
 });
 
