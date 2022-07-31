@@ -1,6 +1,6 @@
 {
   "name": "@nirangad/is-authenticated",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Express middleware to validate JWT token",
   "main": "./lib/isAuthenticated.js",
   "directories": {
