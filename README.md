@@ -2,6 +2,9 @@
 
 Simple middleware for Express to validate JSON web token
 
+# Install
+```npm i @nirangad/is-authenticated```
+
 ## Usage
 
 Make sure to set SECRET_KEY environment variable which used to be passed to
