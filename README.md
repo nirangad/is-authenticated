@@ -41,6 +41,8 @@ const token = jwt.sign(
 ### Using isAuthenticate in Express endpoint
 
 ```sh
+import isAuthenticated from "@nirangad/is-authenticated";
+
 # Express Routes
 app.get("/product", isAuthenticated, (req, res) => {
   return res.json({ status: 1, message: "Welcome to Product Service" });
