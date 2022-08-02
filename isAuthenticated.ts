@@ -3,7 +3,7 @@ import jwt from "jsonwebtoken";
 export default async function isAuthenticated(req: any, res: any, next: any) {
   const authHeader = req.headers.authorization;
   if (!authHeader) {
-    return res.json({ status: 0, message: "Unauthorized" });
+    return res.status(401).json({ status: 0, message: "Unauthorized" });
   }
 
   const token = authHeader.split(" ")[1];
